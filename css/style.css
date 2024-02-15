@@ -1,5 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --yellow: #FFD014;
+  --sunflower: #EDAB01;
+  --white: #fff;
+  --blue-gradiant: linear-gradient( 90deg, rgb(116,82,231) 0%, rgb(183,64,211) 100%);
+  --purple: #b042d6;
+  --darkBlue-opacity-10: rgba(6, 12, 68, 0.47);
+  --darkBlue-opacity-60: rgba(9, 5, 53, 0.62);
+  --darkblue: #170047;
+  --ghost: rgba(217, 217, 217, 0.1);
+}
+
+body {
+  background-image: url(../img/background-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: scroll;
+}
+
+.container {
+  max-width: 1600px;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: clamp(2rem, 0.8333rem + 2.4306vw, 3.75rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 1.5833rem + 0.8681vw, 2.625rem);
+}
+
+h3 {
+  font-size: clamp(1.875rem, 1.625rem + 0.5208vw, 2.25rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 1.2rem + 0.5208vw, 2rem);
+  margin-bottom: 30px;
+}
+
+p {
+  line-height: 1.7em;
+}
+
+header {
+  padding: 10px 0;
+}
+header .wrapper {
+  max-width: 1600px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+header .wrapper nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .wrapper nav .nav-main {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+header .wrapper nav .nav-main .nav-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 20px;
+}
+header .wrapper nav .nav-main .nav-menu ul li {
+  list-style: none;
+}
+header .wrapper nav .nav-main .nav-menu ul li > a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+header .wrapper nav .nav-main .nav-menu ul li > a:hover {
+  color: yellow;
+}
+header .wrapper nav .nav-btn {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 300ms linear;
+  min-width: 130px;
+  text-align: center;
+}
+.btn.primary {
+  background-image: var(--blue-gradiant);
+  border: 2px solid #b042d6;
+}
+.btn.primary:hover {
+  border: 2px solid #fff;
+}
+.btn.ghost {
+  background-color: var(--ghost);
+  border: 2px solid var(--white);
+}
+.btn.ghost:hover {
+  background-color: var(--white);
+  color: var(--darkblue);
+}
+
+:root {
+  --topPostion: 0px;
+}
+
+.hero-sec {
+  padding: 50px 0;
+  position: relative;
+}
+.hero-sec .hero-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.hero-sec .hero-banner > div {
+  flex: 0 50%;
+  position: relative;
+}
+.hero-sec .hero-banner .hero-copy {
+  color: #fff;
+}
+.hero-sec .hero-banner .hero-copy h1 {
+  color: var(--yellow);
+  margin-bottom: 30px;
+}
+.hero-sec .hero-banner .hero-copy h1 span {
+  font-size: 42px;
+  display: block;
+  color: var(--white);
+}
+.hero-sec .hero-banner .hero-copy p {
+  margin-bottom: 30px;
+}
+.hero-sec .hero-banner .hero-image {
+  min-height: 717px;
+  height: inherit;
+  animation-delay: 3s;
+}
+.hero-sec .hero-banner .hero-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  animation-fill-mode: forwards;
+}
+.hero-sec .hero-banner .hero-image .main-image {
+  position: absolute;
+  z-index: 1;
+  margin-top: var(--topPostion);
+}
+.hero-sec .hero-banner .hero-image .ball-floating {
+  position: absolute;
+  top: 48%;
+  margin-top: var(--topPostion);
+}
+.hero-sec .hero-banner .hero-image .clover-floating {
+  position: absolute;
+  right: 20%;
+  top: 8%;
+  z-index: -1;
+  margin-top: var(--topPostion);
+}
+.hero-sec .hero-banner .hero-image .gold-floating {
+  position: absolute;
+  right: 18%;
+  top: 20%;
+  margin-top: var(--topPostion);
+}
+.hero-sec .hero-banner .hero-image .heart-floating {
+  position: absolute;
+  left: 28%;
+  top: 10%;
+  margin-top: var(--topPostion);
+}
+
+@keyframes levitate {
+  0% {
+    margin-top: calc(var(--topPostion));
+  }
+  50% {
+    margin-top: calc(var(--topPostion) + 15px);
+  }
+  100% {
+    margin-top: calc(var(--topPostion));
+  }
 }

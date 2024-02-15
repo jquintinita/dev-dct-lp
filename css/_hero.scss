@@ -1,0 +1,84 @@
+:root{
+    --topPostion: 0px;
+}
+.hero-sec{
+    padding: 50px 0;
+    position: relative;
+    .hero-banner{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        > div{
+            flex: 0 50%;
+            position: relative;
+        }
+        .hero-copy{
+            color: #fff;
+            h1{
+                color: var(--yellow);
+                margin-bottom: 30px;
+                span{
+                    font-size: 42px;
+                    display: block;
+                    color: var(--white);
+                }
+            }
+            p{
+                margin-bottom: 30px;
+            }
+        }
+        .hero-image{
+           min-height: 717px;
+            height: inherit;
+            animation-delay: 3s;
+            img{
+                max-width: 100%;
+                height: auto;
+                display: block;
+                animation-fill-mode: forwards;
+            }
+            .main-image{
+                position: absolute;
+                z-index: 1;
+                margin-top: var(--topPostion);
+            }
+            .ball-floating{
+                position: absolute;
+                top: 48%;
+               margin-top: var(--topPostion);
+            }
+            .clover-floating{
+                position: absolute;
+                right: 20%;
+                top: 8%;
+                z-index: -1;
+                margin-top: var(--topPostion);
+            }
+            .gold-floating{
+                position: absolute;
+                right: 18%;
+                top: 20%;
+                margin-top: var(--topPostion);
+            }
+            .heart-floating{
+                position: absolute;
+                left: 28%;
+                top: 10%;
+                margin-top: var(--topPostion);
+            }
+        }
+    }
+}
+
+
+@keyframes levitate {
+	0% {
+		margin-top: calc(var(--topPostion));
+	}
+	50% {
+		margin-top: calc(var(--topPostion) + 15px);
+	}
+	100% {
+		margin-top: calc(var(--topPostion));
+	}
+}

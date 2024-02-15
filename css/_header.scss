@@ -1,0 +1,41 @@
+header{
+    padding: 10px 0;
+    .wrapper{
+        max-width: 1600px;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .nav-main{
+                display: flex;
+                align-items: center;
+                gap: 0 20px;
+                .nav-menu{
+                    ul{
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 0 20px;
+                        li{
+                            list-style: none;
+                            > a{
+                                color: #fff;
+                                text-decoration: none;
+                                font-weight: 600;
+                                &:hover{
+                                    color: yellow;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .nav-btn{ 
+                display: flex;
+                gap:10px;
+            }
+        }
+    }
+}

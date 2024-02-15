@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: clamp(2rem, 0.8333rem + 2.4306vw, 3.75rem);
+}
+h2{
+    font-size: clamp(2rem, 1.5833rem + 0.8681vw, 2.625rem);
+}
+h3{
+    font-size: clamp(1.875rem, 1.625rem + 0.5208vw, 2.25rem);
+}
+
+h4{
+    font-size: clamp(1.4rem, 1.2rem + 0.5208vw, 2rem); 
+    margin-bottom: 30px;
+}
+
+p{
+    line-height: 1.7em;
+}
