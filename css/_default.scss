@@ -32,3 +32,56 @@ body{
     margin: 0 auto;
     display: block;
 }
+
+.services-offer{
+    padding: 40px 0;
+    .services{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .lg-icon{
+            color: var(--white);
+            opacity: 0.6;
+            transition: all 200ms linear;
+            &:hover{
+                opacity: 1;
+                cursor: pointer;
+            }
+            &.red:hover{
+                animation: glowTextRed 1s linear infinite
+            }
+            &.purple:hover{
+                animation: glowTextPurple 1s linear infinite
+            }
+            &.yellow:hover{
+                animation: glowTextYellow 1s linear infinite
+            }
+        }
+    }
+}
+
+
+@keyframes glowTextRed {
+    0% {
+        text-shadow: 0px 0px 5px #ff0000, 0px 0px 5px #614ad3;
+    }
+    100% {
+        text-shadow: 0px 0px 20px #ff0000, 0px 0px 20px #614ad3;
+    }
+}
+@keyframes glowTextPurple {
+    0% {
+        text-shadow: 0px 0px 5px #b042d6, 0px 0px 5px #614ad3;
+    }
+    100% {
+        text-shadow: 0px 0px 20px #b042d6, 0px 0px 20px #614ad3;
+    }
+}
+@keyframes glowTextYellow{
+    0% {
+        text-shadow: 0px 0px 5px #FFD014, 0px 0px 5px #614ad3;
+    }
+    100% {
+        text-shadow: 0px 0px 20px #FFD014, 0px 0px 20px #614ad3;
+    }
+}
