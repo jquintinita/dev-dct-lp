@@ -172,41 +172,41 @@ header .wrapper nav .nav-btn {
 .hero-sec .hero-banner .hero-image .main-image {
   position: absolute;
   z-index: 1;
-  margin-top: var(--topPostion);
+  margin-top: translateY(var(--topPostion));
 }
 .hero-sec .hero-banner .hero-image .ball-floating {
   position: absolute;
   top: 48%;
-  margin-top: var(--topPostion);
+  margin-top: translateY(var(--topPostion));
 }
 .hero-sec .hero-banner .hero-image .clover-floating {
   position: absolute;
   right: 20%;
   top: 8%;
   z-index: -1;
-  margin-top: var(--topPostion);
+  margin-top: translateY(var(--topPostion));
 }
 .hero-sec .hero-banner .hero-image .gold-floating {
   position: absolute;
   right: 18%;
   top: 20%;
-  margin-top: var(--topPostion);
+  transform: translateY(var(--topPostion));
 }
 .hero-sec .hero-banner .hero-image .heart-floating {
   position: absolute;
   left: 28%;
   top: 10%;
-  margin-top: var(--topPostion);
+  margin-top: translateY(var(--topPostion));
 }
 
 @keyframes levitate {
   0% {
-    margin-top: calc(var(--topPostion));
+    transform: translateY(calc(var(--topPostion)));
   }
   50% {
-    margin-top: calc(var(--topPostion) + 15px);
+    transform: translateY(calc(var(--topPostion) + 15px));
   }
   100% {
-    margin-top: calc(var(--topPostion));
+    transform: translateY(calc(var(--topPostion)));
   }
 }

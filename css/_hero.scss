@@ -40,31 +40,31 @@
             .main-image{
                 position: absolute;
                 z-index: 1;
-                margin-top: var(--topPostion);
+                margin-top: translateY(var(--topPostion));
             }
             .ball-floating{
                 position: absolute;
                 top: 48%;
-               margin-top: var(--topPostion);
+               margin-top:translateY(var(--topPostion));
             }
             .clover-floating{
                 position: absolute;
                 right: 20%;
                 top: 8%;
                 z-index: -1;
-                margin-top: var(--topPostion);
+                margin-top:translateY(var(--topPostion));
             }
             .gold-floating{
                 position: absolute;
                 right: 18%;
                 top: 20%;
-                margin-top: var(--topPostion);
+                transform: translateY(var(--topPostion));
             }
             .heart-floating{
                 position: absolute;
                 left: 28%;
                 top: 10%;
-                margin-top: var(--topPostion);
+                margin-top: translateY(var(--topPostion));
             }
         }
     }
@@ -73,12 +73,12 @@
 
 @keyframes levitate {
 	0% {
-		margin-top: calc(var(--topPostion));
+		transform: translateY(calc(var(--topPostion)));
 	}
 	50% {
-		margin-top: calc(var(--topPostion) + 15px);
+		transform: translateY(calc(var(--topPostion) + 15px));
 	}
 	100% {
-		margin-top: calc(var(--topPostion));
+		transform: translateY(calc(var(--topPostion)));
 	}
 }
