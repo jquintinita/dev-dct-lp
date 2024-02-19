@@ -19,6 +19,7 @@ header{
                 display: flex;
                 align-items: center;
                 gap: 0 50px;
+
                 .nav-menu{
                     ul{
                         display: flex;
@@ -64,6 +65,7 @@ header{
                 .nav-main{
                     flex-wrap: wrap;
                     flex: 0 100%;
+                    height: 62px;
                 }
                 .nav-logo{
                     flex: 0 100%;
