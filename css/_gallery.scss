@@ -16,6 +16,7 @@
             height: 100%;
             .slick-track{
                 height: 100%;
+                display: flex;
                 .game-box-slide{
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -23,6 +24,7 @@
                     align-items: center; 
                     justify-content: center;
                     overflow:hidden;
+                    position: relative;
                     > img{
                         max-width: 300px;
                         height: auto;
@@ -34,8 +36,11 @@
                         height: 120%;
                         width: auto;
                         object-fit: cover;
-                        position: fixed;
+                        position: absolute;
                         z-index: 1;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
                         filter: blur(12px);
                         @media screen and (min-width: 981px) {
                             max-width: 100%;

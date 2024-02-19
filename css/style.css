@@ -480,6 +480,7 @@ header .wrapper nav .burger-btn {
 }
 .popular-games-gallery .popular-game-slider .slick-list .slick-track {
   height: 100%;
+  display: flex;
 }
 .popular-games-gallery .popular-game-slider .slick-list .slick-track .game-box-slide {
   background-size: cover;
@@ -488,6 +489,7 @@ header .wrapper nav .burger-btn {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  position: relative;
 }
 .popular-games-gallery .popular-game-slider .slick-list .slick-track .game-box-slide > img {
   max-width: 300px;
@@ -501,8 +503,11 @@ header .wrapper nav .burger-btn {
   width: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  position: fixed;
+  position: absolute;
   z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   filter: blur(12px);
 }
 @media screen and (min-width: 981px) {
