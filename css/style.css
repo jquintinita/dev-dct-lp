@@ -247,6 +247,9 @@ header .wrapper nav .burger-btn {
     align-items: center;
     padding: 0 10px;
   }
+  header .wrapper nav .nav-logo a img {
+    max-width: 180px;
+  }
   header .wrapper nav .nav-btn {
     gap: 0;
     flex: 0 100%;
