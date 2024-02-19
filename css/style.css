@@ -510,11 +510,12 @@ header .wrapper nav .burger-btn {
   top: 50%;
   transform: translate(-50%, -50%);
   filter: blur(12px);
+  opacity: 0.8;
 }
 @media screen and (min-width: 981px) {
   .popular-games-gallery .popular-game-slider .slick-list .slick-track .game-box-slide .bg-img {
     max-width: 100%;
-    height: 100%;
+    height: 110%;
     width: auto;
     -o-object-fit: cover;
        object-fit: cover;
