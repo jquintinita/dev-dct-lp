@@ -15,6 +15,7 @@
         border: 2px solid #b042d6;
         &:hover{
             border:  2px solid #fff;
+            background-image: var(--purple-gradiant);
         }
     }
     &.ghost{

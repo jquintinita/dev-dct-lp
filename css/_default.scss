@@ -10,11 +10,13 @@
     --sunflower: #EDAB01;
     --white: #fff;
     --blue-gradiant:  linear-gradient( 90deg, rgb(116,82,231) 0%, rgb(183,64,211) 100%); 
+    --purple-gradiant:  linear-gradient( 90deg, rgb(183,64,211) 0%, rgb(116,82,231) 100%); 
     --purple: #b042d6;
     --darkBlue-opacity-10: rgba(6, 12, 68, 0.47);
     --darkBlue-opacity-60: rgba(9, 5, 53, 0.62);
     --darkblue: #170047;
     --ghost: rgba(217, 217, 217, 0.1);
+    --blue-sky: #0085FF;
 }
 
 body{
@@ -55,6 +57,12 @@ body{
             }
             &.yellow:hover{
                 animation: glowTextYellow 1s linear infinite
+            }
+        }
+        @media screen and (max-width: 980px) {
+            flex-wrap: wrap;
+            .lg-icon{
+                font-size:20vw;
             }
         }
     }
