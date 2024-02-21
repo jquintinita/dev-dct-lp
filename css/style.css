@@ -34,37 +34,37 @@ body {
   display: block;
 }
 
-.services-offer {
+.product-offer {
   padding: 40px 0;
 }
-.services-offer .services {
+.product-offer .products {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.services-offer .services .lg-icon {
+.product-offer .products .lg-icon {
   color: var(--white);
   opacity: 0.6;
   transition: all 200ms linear;
 }
-.services-offer .services .lg-icon:hover {
+.product-offer .products .lg-icon:hover {
   opacity: 1;
   cursor: pointer;
 }
-.services-offer .services .lg-icon.red:hover {
+.product-offer .products .lg-icon.red:hover {
   animation: glowTextRed 1s linear infinite;
 }
-.services-offer .services .lg-icon.purple:hover {
+.product-offer .products .lg-icon.purple:hover {
   animation: glowTextPurple 1s linear infinite;
 }
-.services-offer .services .lg-icon.yellow:hover {
+.product-offer .products .lg-icon.yellow:hover {
   animation: glowTextYellow 1s linear infinite;
 }
 @media screen and (max-width: 980px) {
-  .services-offer .services {
+  .product-offer .products {
     flex-wrap: wrap;
   }
-  .services-offer .services .lg-icon {
+  .product-offer .products .lg-icon {
     font-size: 20vw;
   }
 }
@@ -93,6 +93,111 @@ body {
     text-shadow: 0px 0px 20px #FFD014, 0px 0px 20px #614ad3;
   }
 }
+.service-wrapper {
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+@media screen and (min-width: 980px) {
+  .service-wrapper {
+    gap: 3%;
+  }
+}
+
+.blurb-box {
+  flex: 0 100%;
+  border: 1px solid #3319D6;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: rgba(6, 12, 68, 0.47);
+}
+.blurb-box .blurb-img {
+  margin-bottom: 30px;
+}
+.blurb-box .blurb-img img {
+  max-width: 60px;
+  display: block;
+  margin: 0 auto;
+}
+.blurb-box .blurb-copy {
+  color: var(--white);
+  text-align: center;
+}
+@media screen and (min-width: 980px) {
+  .blurb-box {
+    flex: 0 30%;
+  }
+}
+
+.promotion-sec {
+  padding: 60px 0;
+  background-color: rgba(9, 5, 53, 0.8);
+}
+.promotion-sec .promo-slider {
+  margin-top: 30px;
+}
+.promotion-sec .promo-slider .slick-slide {
+  padding: 0 20px;
+}
+.promotion-sec .promo-slider .slick-slide img {
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+}
+.promotion-sec .promo-slider .slick-dots {
+  bottom: -40px;
+}
+.promotion-sec .promo-slider .slick-dots li button:before {
+  opacity: 1;
+  color: #fff;
+  font-size: 10px;
+}
+.promotion-sec .promo-slider .slick-active button:before {
+  color: var(--sunflower) !important;
+}
+.promotion-sec .promo-slider .slick-prev {
+  left: 0;
+}
+.promotion-sec .promo-slider .slick-next {
+  right: 0;
+}
+
+.provider-sec {
+  padding: 60px 0;
+  background-color: rgba(9, 5, 53, 0.5);
+}
+
+.game-providers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  padding: 40px 0 0;
+}
+.game-providers > img {
+  max-width: 50px;
+  filter: grayscale(1);
+  mix-blend-mode: luminosity;
+  transition: all 300ms linear;
+}
+.game-providers > img:hover {
+  filter: grayscale(0);
+  mix-blend-mode: normal;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .game-providers > img {
+    max-width: 30px;
+  }
+}
+
+.copyright-sec {
+  background-color: var(--darkblue);
+  padding: 15px 0;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -617,4 +722,48 @@ header .wrapper nav .burger-btn {
     width: 100%;
     height: 100%;
   }
+}
+
+footer .cta-sec {
+  padding: 50px 0;
+}
+
+.cta-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+.cta-footer > div {
+  flex: 0 calc(50% - 20px);
+}
+@media screen and (max-width: 980px) {
+  .cta-footer > div {
+    flex: 0 100%;
+  }
+}
+.cta-footer .cta-image {
+  text-align: center;
+}
+.cta-footer .cta-image img {
+  border-radius: 15px;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.cta-footer .cta-copy {
+  text-align: left;
+  color: var(--white);
+}
+.cta-footer .cta-copy p, .cta-footer .cta-copy h2 {
+  margin-bottom: 30px;
+}
+
+.social-media {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  gap: 0 30px;
 }
