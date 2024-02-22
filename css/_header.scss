@@ -33,7 +33,12 @@ header{
                                 font-weight: 600;
                                 padding: 10px;
                                 display: block;
-                                &:hover{
+                                &:hover, &.active{
+                                    color: yellow;
+                                }
+                            }
+                            &.active{
+                                a{
                                     color: yellow;
                                 }
                             }

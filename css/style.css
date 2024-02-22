@@ -125,6 +125,10 @@ body {
   color: var(--white);
   text-align: center;
 }
+.blurb-box .blurb-copy h3 {
+  font-size: 22px !important;
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 980px) {
   .blurb-box {
     flex: 0 30%;
@@ -196,6 +200,34 @@ body {
 .copyright-sec {
   background-color: var(--darkblue);
   padding: 15px 0;
+}
+
+.intro-section {
+  padding: 60px 0;
+}
+
+.section-content {
+  padding: 0px 0 60px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0 30px;
+  justify-content: center;
+}
+.section-content.reversed {
+  flex-direction: row-reverse;
+}
+.section-content > div {
+  flex: 0 calc(50% - 30px);
+}
+.section-content > div.section-copy {
+  color: var(--white);
+}
+.section-content > div.section-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 body {
@@ -313,7 +345,10 @@ header .wrapper nav .nav-main .nav-menu ul li > a {
   padding: 10px;
   display: block;
 }
-header .wrapper nav .nav-main .nav-menu ul li > a:hover {
+header .wrapper nav .nav-main .nav-menu ul li > a:hover, header .wrapper nav .nav-main .nav-menu ul li > a.active {
+  color: yellow;
+}
+header .wrapper nav .nav-main .nav-menu ul li.active a {
   color: yellow;
 }
 header .wrapper nav .nav-btn {
