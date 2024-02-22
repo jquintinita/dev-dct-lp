@@ -181,7 +181,7 @@ body {
   padding: 40px 0 0;
 }
 .game-providers > img {
-  max-width: 50px;
+  max-width: 40px;
   filter: grayscale(1);
   mix-blend-mode: luminosity;
   transition: all 300ms linear;
@@ -223,11 +223,30 @@ body {
 .section-content > div.section-copy {
   color: var(--white);
 }
+.section-content > div.section-copy h2 {
+  padding-bottom: 20px;
+}
+.section-content > div.section-copy p:not(:last-of-type) {
+  padding-bottom: 20px;
+}
+.section-content > div.section-copy p a {
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: underline;
+}
 .section-content > div.section-img img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
+}
+@media only screen and (max-width: 980px) {
+  .section-content {
+    gap: 30px 0;
+  }
+  .section-content > div {
+    flex: 0 100%;
+  }
 }
 
 body {
@@ -525,7 +544,7 @@ header .wrapper nav .burger-btn {
   margin-bottom: 30px;
 }
 .hero-sec .hero-banner .hero-copy h1 span {
-  font-size: 42px;
+  font-size: 2.3vw;
   display: block;
   color: var(--white);
 }
