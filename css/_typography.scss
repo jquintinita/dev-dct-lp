@@ -7,7 +7,7 @@ h1{
     font-size: clamp(2rem, 0.8333rem + 2.4306vw, 3.75rem);
 }
 h2{
-    font-size: clamp(2rem, 1.5833rem + 0.8681vw, 2.625rem);
+    font-size: clamp(2rem, 1.5833rem + 0.8681vw, 2.325rem);
 }
 h3{
     font-size: clamp(1.875rem, 1.625rem + 0.5208vw, 2.25rem);
@@ -60,6 +60,11 @@ p{
     content: "\e902";
   }
   
+  .text-center p > a{
+    text-decoration: underline;
+    color:#fff;
+    font-weight: 600;
+  }
 
   .lg-icon{
     font-size: 120px;
