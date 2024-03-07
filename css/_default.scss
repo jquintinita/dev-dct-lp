@@ -17,6 +17,7 @@
     --darkblue: #170047;
     --ghost: rgba(217, 217, 217, 0.1);
     --blue-sky: #0085FF;
+    --blue: #0a59c0a9;
 }
 
 body{
@@ -247,4 +248,11 @@ body{
         }
     }
     
+}
+
+.promotion-gallery{
+    padding: 80px 0 30px;
+    @media screen and (max-width: 767px) {
+        padding: 40px 0 30px;
+    }
 }
