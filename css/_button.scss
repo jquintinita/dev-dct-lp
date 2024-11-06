@@ -11,11 +11,12 @@
     min-width: 130px;
     text-align: center;
     &.primary{
-        background-image: var(--blue-gradiant);
-        border: 2px solid #b042d6;
+        background-image: var(--yellow-gradiant);
+        border: 2px solid #5e4608;
         &:hover{
-            border:  2px solid #fff;
-            background-image: var(--purple-gradiant);
+            border:  2px solid #fcca00;
+            background-image: var(--yellow-gradiant);
+            color:#5e4608
         }
     }
     &.ghost{

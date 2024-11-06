@@ -8,9 +8,13 @@
 :root {
   --yellow: #FFD014;
   --sunflower: #EDAB01;
+  --darkyellow: #261b00;
   --white: #fff;
+  --black: #150c00;
   --blue-gradiant: linear-gradient( 90deg, rgb(116,82,231) 0%, rgb(183,64,211) 100%);
   --purple-gradiant: linear-gradient( 90deg, rgb(183,64,211) 0%, rgb(116,82,231) 100%);
+  --yellow-gradiant: linear-gradient( 90deg, rgb(211, 169, 64) 0%, rgb(226, 231, 82) 100%);
+  --gray-gradiant: linear-gradient( 90deg, rgb(220, 220, 220) 0%, rgb(242, 242, 242) 100%);
   --purple: #b042d6;
   --darkBlue-opacity-10: rgba(6, 12, 68, 0.47);
   --darkBlue-opacity-60: rgba(9, 5, 53, 0.62);
@@ -25,7 +29,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 
 .container {
@@ -109,10 +113,10 @@ body {
 
 .blurb-box {
   flex: 0 100%;
-  border: 1px solid #3319D6;
+  border: 1px solid #987d10;
   padding: 30px;
   border-radius: 20px;
-  background-color: rgba(6, 12, 68, 0.47);
+  background-color: rgba(68, 63, 6, 0.47);
 }
 .blurb-box .blurb-img {
   margin-bottom: 30px;
@@ -138,7 +142,7 @@ body {
 
 .promotion-sec {
   padding: 60px 0;
-  background-color: rgba(3, 26, 88, 0.8);
+  background-color: rgba(255, 246, 148, 0.8);
 }
 .promotion-sec .promo-slider {
   margin-top: 30px;
@@ -171,7 +175,7 @@ body {
 
 .provider-sec {
   padding: 60px 0;
-  background-color: rgba(9, 5, 53, 0.5);
+  background-color: rgba(53, 37, 5, 0.5);
 }
 
 .game-providers {
@@ -196,11 +200,6 @@ body {
   .game-providers > img {
     max-width: 30px;
   }
-}
-
-.copyright-sec {
-  background-color: var(--darkblue);
-  padding: 15px 0;
 }
 
 .intro-section {
@@ -330,6 +329,14 @@ p {
 
 .text-white {
   color: var(--white);
+}
+
+.text-dark {
+  color: var(--darkyellow);
+}
+
+.text-yellow {
+  color: var(--sunflower);
 }
 
 .text-center {
@@ -499,12 +506,13 @@ header .wrapper nav .burger-btn {
   text-align: center;
 }
 .btn.primary {
-  background-image: var(--blue-gradiant);
-  border: 2px solid #b042d6;
+  background-image: var(--yellow-gradiant);
+  border: 2px solid #5e4608;
 }
 .btn.primary:hover {
-  border: 2px solid #fff;
-  background-image: var(--purple-gradiant);
+  border: 2px solid #fcca00;
+  background-image: var(--yellow-gradiant);
+  color: #5e4608;
 }
 .btn.ghost {
   background-color: var(--ghost);
@@ -844,7 +852,7 @@ header .wrapper nav .burger-btn {
   }
   .popular-games > div:not(:first-child):hover {
     cursor: pointer;
-    border: 2px solid var(--blue-sky);
+    border: 2px solid var(--sunflower);
   }
   .popular-games > div:not(:first-child):hover img {
     height: 105%;
@@ -889,7 +897,7 @@ header .wrapper nav .burger-btn {
   transition: all 200ms linear;
 }
 .promo-gallery .promo-box:hover {
-  background-color: var(--blue);
+  background-color: var(--sunflower);
   transform: translateY(-10px);
   cursor: pointer;
 }
@@ -969,7 +977,16 @@ header .wrapper nav .burger-btn {
 }
 
 footer .cta-sec {
-  padding: 50px 0;
+  padding: 60px 0;
+}
+
+.join-social {
+  background-color: #e3d991;
+  padding: 60px 0;
+  color: var(--darkyellow);
+}
+.join-social h4, .join-social h2 {
+  color: inherit;
 }
 
 .cta-footer {
@@ -1006,10 +1023,15 @@ footer .cta-sec {
 }
 
 .social-media {
-  padding: 40px 0;
+  padding: 40px 0 0;
   display: flex;
   justify-content: center;
   gap: 0 30px;
+}
+
+.copyright-sec {
+  background-color: var(--black);
+  padding: 15px 0;
 }
 
 /*!
@@ -2285,4 +2307,4 @@ footer .cta-sec {
 }
 .slideOutUp {
   animation-name: slideOutUp;
-}
+}/*# sourceMappingURL=style.css.map */

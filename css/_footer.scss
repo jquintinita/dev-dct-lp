@@ -1,9 +1,17 @@
 footer{
     .cta-sec{
-        padding: 50px 0;
+        padding: 60px 0;
     }
 }
-
+.join-social{
+    background-color: #e3d991;
+    padding: 60px 0;
+    color: var(--darkyellow);
+    h4, h2{
+        color: inherit;
+    }
+    
+}
 .cta-footer{
     display: flex;
     flex-wrap: wrap;
@@ -38,8 +46,14 @@ footer{
 }
 
 .social-media{
-    padding: 40px 0;
+    padding: 40px 0 0;
     display: flex;
     justify-content: center;
     gap: 0 30px;
+}
+
+
+.copyright-sec{
+    background-color: var(--black);
+    padding: 15px 0;
 }

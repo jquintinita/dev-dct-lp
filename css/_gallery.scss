@@ -119,7 +119,7 @@
             height: unset;
             &:not(:first-child):hover{
                 cursor: pointer;
-                border: 2px solid var(--blue-sky);
+                border: 2px solid var(--sunflower);
                 img{
                     height: 105%;
                     opacity: 0.8;
@@ -166,7 +166,7 @@
         flex: 0  calc(50% - 40px);
         transition: all 200ms linear;
         &:hover{
-            background-color:var(--blue);
+            background-color:var(--sunflower);
             transform: translateY(-10px);
             cursor: pointer;
         }

@@ -8,9 +8,13 @@
 :root{
     --yellow: #FFD014;
     --sunflower: #EDAB01;
+    --darkyellow: #261b00;
     --white: #fff;
+    --black: #150c00;
     --blue-gradiant:  linear-gradient( 90deg, rgb(116,82,231) 0%, rgb(183,64,211) 100%); 
     --purple-gradiant:  linear-gradient( 90deg, rgb(183,64,211) 0%, rgb(116,82,231) 100%); 
+    --yellow-gradiant:  linear-gradient( 90deg, rgb(211, 169, 64) 0%, rgb(226, 231, 82) 100%); 
+    --gray-gradiant:  linear-gradient( 90deg, rgb(220, 220, 220) 0%, rgb(242, 242, 242) 100%); 
     --purple: #b042d6;
     --darkBlue-opacity-10: rgba(6, 12, 68, 0.47);
     --darkBlue-opacity-60: rgba(9, 5, 53, 0.62);
@@ -25,7 +29,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    background-attachment: scroll;
+    background-attachment: fixed;
  
 }
 
@@ -108,10 +112,10 @@ body{
 }
 .blurb-box{
     flex: 0 100%;
-    border: 1px solid #3319D6;
+    border: 1px solid #987d10;
     padding: 30px;
     border-radius: 20px;
-    background-color: rgba(6, 12, 68, 0.47);
+    background-color: rgba(68, 63, 6, 0.47);
     .blurb-img{
         margin-bottom: 30px;
         img{
@@ -138,7 +142,7 @@ body{
 
 .promotion-sec{
     padding: 60px 0;
-    background-color: rgba(3, 26, 88, 0.8);
+    background-color: rgba(255, 246, 148, 0.8);
     .promo-slider{
         margin-top: 30px;
         .slick-slide{
@@ -170,7 +174,7 @@ body{
 }
 .provider-sec{
     padding: 60px 0;
-    background-color: rgba(9, 5, 53, 0.5);
+    background-color: rgba(53, 37, 5, 0.5);
 }
 
 .game-providers{
@@ -195,10 +199,7 @@ body{
     }
 }
 
-.copyright-sec{
-    background-color: var(--darkblue);
-    padding: 15px 0;
-}
+
 
 .intro-section{
     padding: 60px 0;
