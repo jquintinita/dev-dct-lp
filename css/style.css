@@ -258,6 +258,78 @@ body {
   }
 }
 
+.faq-cont {
+  margin-bottom: 60px;
+}
+
+.accordion {
+  background-color: #fff098;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.accordion-container {
+  margin-bottom: 10px;
+}
+
+.accordion {
+  background-color: #fff098;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  position: relative;
+}
+
+.accordion::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  border: solid #3b3301;
+  border-width: 0 2px 2px 0;
+  padding: 5px;
+  transform: rotate(45deg);
+  transition: transform 0.3s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion.active::after {
+  transform: rotate(-135deg);
+}
+
+.panel {
+  padding: 8px 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
